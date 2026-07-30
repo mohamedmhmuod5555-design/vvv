@@ -56,7 +56,7 @@ if st.session_state.feed=="false":
  del st.session_state.num1
  del st.session_state.num2
  del st.session_state.sign 
- time.sleep()
+ time.sleep(1)
  st.rerun()   
 
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
