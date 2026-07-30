@@ -37,11 +37,9 @@ number=st.number_input("ادخل النتيجه ")
 if st.button("تأكيد التخمين "):
   st.session_state.count += 1
   if number == sc:
-   st.success("  اجابتك صحيحه انك اسطوره يا عبقري الرياضه  ")
    st.session_state.num += 1
    st.session_state.feed="correct"
   else:
-   st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
   st.session_state.num =0
   st.session_state.feed="false" 
 if st.session_state.feed=="correct":
@@ -52,7 +50,7 @@ if st.session_state.feed=="correct":
  time.sleep(1)
  st.rerun()
 if st.session_state.feed=="false":
- st.success("للاسف اجابتك خطء انا حزين لان مستواك كان جيد  ")
+ st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
  del st.session_state.num1
  del st.session_state.num2
  del st.session_state.sign 
