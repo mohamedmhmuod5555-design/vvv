@@ -48,6 +48,7 @@ if st.session_state.feed=="correct":
   st.session_state.num2=random.randint(1,st.session_state.ran)
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
+  st.rerun()
   
 if st.session_state.feed=="false":
   st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
@@ -55,6 +56,7 @@ if st.session_state.feed=="false":
   st.session_state.num2=random.randint(1,st.session_state.ran)
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
+  st.rerun()
      
 
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
