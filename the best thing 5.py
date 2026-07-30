@@ -18,7 +18,7 @@ if 'num2' not in st.session_state:
 if 'sign' not in st.session_state:
  st.session_state.sign=random.choice(['+','-','*','/'])
 if 'feed' not in st.session_state:
- st.session_state.feed=0
+ st.session_state.feed
 
 num1 = st.session_state.num1
 num2 = st.session_state.num2
