@@ -44,16 +44,16 @@ if st.button("تأكيد التخمين "):
    st.session_state.feed="false" 
 if st.session_state.feed=="correct":
  st.success("انك اسطوره يا عبقري الرياضه ")
- del st.session_state.num1
- del st.session_state.num2
- del st.session_state.sign
+ st.session_state.num1=random.randint(1,st.session_state.ran)
+ st.session_state.num2=random.randint(1,st.session_state.ran)
+ st.session_state.sign=random.choice(['+','-','*','/'])
  time.sleep(1)
  st.rerun()
 if st.session_state.feed=="false":
  st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
- del st.session_state.num1
- del st.session_state.num2
- del st.session_state.sign 
+ st.session_state.num1=random.randint(1,st.session_state.ran)
+ st.session_state.num2=random.randint(1,st.session_state.ran)
+ st.session_state.sign=random.choice(['+','-','*','/'])
  time.sleep(1)
  st.rerun()   
 
