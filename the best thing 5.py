@@ -49,7 +49,7 @@ if st.session_state.feed=="correct":
   del st.session_state.num2
   del st.session_state.sign
   time.sleep(1)
- st.rerun()
+  st.rerun()
 else:
   st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
   st.session_state.feed=None
