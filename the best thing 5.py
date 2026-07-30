@@ -36,7 +36,7 @@ st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تأكيد التخمين "):
   st.session_state.count += 1
- if number == sc:
+  if number == sc:
    st.session_state.num += 1
    st.session_state.feed="correct"
   else:
